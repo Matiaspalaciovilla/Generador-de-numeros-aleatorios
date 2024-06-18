@@ -1,6 +1,7 @@
 const minInput = document.querySelector('#minimo');
 const maxInput = document.querySelector('#maximo');
 const caja = document.querySelector('.numeros');
+
 let previousNumber = null;
 
 function generateRandomNumber() {

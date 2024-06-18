@@ -36,20 +36,24 @@ input {
     font-size: large;
 }
 
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
 #boton-generar {
     margin: 10px 0;
     background-color: #525252;
     border: solid rgb(255, 253, 253) 1px;
     padding: 1fr 2px 10px 2px;
     border-radius: 3px;
-    transition: .3s;
+    transition: background-color .3s, color .3s;
     height: 35px;
     font-size: large;
     margin-top: 32px;
 }
 
 #boton-generar:hover{
-    background-color: #a8a8a8;
+    background-color: #a8a8a8;  
     color: rgb(31, 31, 31);
 }
 
