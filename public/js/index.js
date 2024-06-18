@@ -1,11 +1,20 @@
 const minInput = document.querySelector('#minimo');
 const maxInput = document.querySelector('#maximo');
 const caja = document.querySelector('.numeros');
+let previousNumber = null;
 
 function generateRandomNumber() {
     const min = parseInt(minInput.value);
     const max = parseInt(maxInput.value);
-    const numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    let numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    while (numeroRandom === previousNumber) {
+        numeroRandom = Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    previousNumber = numeroRandom;
+
     document.querySelector('#resultado').innerText = `Número Aleatorio: ${numeroRandom}`;
     saveGeneratedNumbers(numeroRandom);
 }
