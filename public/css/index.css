@@ -87,6 +87,7 @@ aside h2{
 aside p, #resultado{
     background-color: rgb(63, 63, 63, 45%);
     border-radius: 5px;
+    padding:  0 5px 0 5px;
     display: flex;
     justify-content: center;
 }
