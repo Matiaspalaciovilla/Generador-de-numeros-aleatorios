@@ -21,20 +21,20 @@
     </div>
 </head>
 
-<body>
-    <!--aqui en el main está la parte que genera los numeros-->
+<body>  
+    <!--generacion-->
     <main class="caja">
-        <h1>Ruleta</h1>
+        <h1>Aséo Recode</h1>
         <label for="minimo">Mínimo:</label>
         <input type="number" id="minimo" name="minimo" value="1">
         <br>
         <label for="maximo">Máximo:</label>
-        <input type="number" id="maximo" name="maximo" value="100">
+        <input type="number" id="maximo" name="maximo" value="10">
         <br>
         <button id="boton-generar" onclick="generateRandomNumber(); saveGeneratedNumbers();">Generar Número</button>
         <h2 id="resultado"></h2>
     </main>
-    <!--aqui se van agregando los numeros generados cada que se presiona el boton que hay en main-->
+    <!-- numeros que van saliendo-->
     <aside>
         <h2>Números generados:</h2>
         <div class="numeros">
