@@ -30,4 +30,4 @@ function saveGeneratedNumbers(numero) {
 
 document
   .querySelector("#generar")
-  .addEventListener("click", generateRandomNumber);
+  .addEventListener("click", generateRandomNumber());
